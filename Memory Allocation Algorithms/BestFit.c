@@ -44,8 +44,8 @@ void main()
                         lowest = temp;
                     }
                 }
-                else if (block_file_num[i] == 0)
-                    block_file_num[i] = -1;
+                // else if (block_file_num[i] == 0)
+                //     block_file_num[i] = -1;
             }
         }
 
@@ -53,6 +53,7 @@ void main()
         {
             displayBlock[i] = -1;
             frag[i] = -1;
+            block_file_num[i] = -1;
         }
         else
         {

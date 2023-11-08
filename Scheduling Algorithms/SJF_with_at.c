@@ -26,16 +26,6 @@ int main()
     wt = (int *)malloc(n * sizeof(int));
     tat = (int *)malloc(n * sizeof(int));
 
-    for (int i = 0; i < n; i++)
-    {
-        p[i] = i + 1;
-        printf("Enter the burst time of process %d -- ", i + 1);
-        scanf("%d", &bt[i]);
-
-        printf("Enter the arrival time of process %d -- ", i + 1);
-        scanf("%d", &at[i]);
-    }
-
     // da5l el bt w el at bta3 el process
     for (int i = 0; i < n; i++)
     {
@@ -97,7 +87,7 @@ int main()
 
             if (ct[i - 1] < at[i])
             {
-                ct[i] = ct[i - 1] + bt[i] + (at[i] - ct[i - 1]);
+                ct[i] = ct[i - 1] + bt[i] + (at[i] - ct[i - 1]); // ct[i] = at[i] + bt[i];
             }
             else
             {
