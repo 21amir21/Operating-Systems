@@ -49,7 +49,7 @@ void main()
             }
         }
 
-        if (block_file_num[i] == -1)
+        if (block_file_num[i] == 0)
         {
             displayBlock[i] = -1;
             frag[i] = -1;
