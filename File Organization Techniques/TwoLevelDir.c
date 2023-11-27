@@ -23,6 +23,7 @@ int main()
         printf("\n4. Search File\t\t5. Display\t6. Exit\t");
         printf("\nEnter your choice -- ");
         scanf_s("%d", &ch);
+
         switch (ch)
         {
         case 1:
@@ -75,6 +76,7 @@ int main()
             printf("Directory %s not found", d);
         jmp:
             break;
+
         case 4:
             printf("\nEnter name of the directory -- ");
             scanf_s("%s", d, sizeof(d) / sizeof(d[0]));
