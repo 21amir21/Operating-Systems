@@ -56,7 +56,7 @@ int main()
         blocks[i] = 0;
 
     printf("Files Allocated are :\n");
-
     store(blocks);
+
     return 0;
 }
