@@ -6,7 +6,7 @@
 
 void recursivePart(int blocks[])
 {
-    int st, len, k, ch, j;
+    int st, len, k, ch, i;
 
     printf("Enter the index of the starting block: ");
     scanf_s("%d", &st);
@@ -16,16 +16,16 @@ void recursivePart(int blocks[])
     k = len;
     if (blocks[st] == 0)
     {
-        for (j = st; j < (st + k); j++)
+        for (i = st; i < (st + k); i++)
         {
-            if (blocks[j] == 0)
+            if (blocks[i] == 0)
             {
-                blocks[j] = 1;
-                printf("%d------>%d\n", j, blocks[j]);
+                blocks[i] = 1;
+                printf("%d------>%d\n", i, blocks[i]);
             }
             else
             {
-                printf("The block %d is already allocated \n", j);
+                printf("The block %d is already allocated \n", i);
                 k++;
             }
         }
