@@ -6,7 +6,7 @@
 
 void store(int blocks[])
 {
-    int available_storage = 1, startBlock, len, i, j, ch;
+    int available_storage = 1, startBlock, len, i, ch;
 
     printf("Enter the index of the starting block: ");
     scanf_s("%d", &startBlock);
@@ -24,17 +24,17 @@ void store(int blocks[])
 
     if (available_storage == 1)
     {
-        for (j = startBlock; j < (startBlock + len); j++)
+        for (i = startBlock; i < (startBlock + len); i++)
         {
             // el if malhash lazma
-            if (blocks[j] == 0)
+            if (blocks[i] == 0)
             {
-                blocks[j] = 1;
-                printf("%d\t%d\n", j, blocks[j]);
+                blocks[i] = 1;
+                printf("%d\t%d\n", i, blocks[i]);
             }
         }
 
-        if (j == (startBlock + len))
+        if (i == (startBlock + len))
             printf("\nThe file is allocated to the disk\n");
     }
     else
