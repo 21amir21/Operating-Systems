@@ -26,6 +26,7 @@ void store(int blocks[])
     {
         for (j = startBlock; j < (startBlock + len); j++)
         {
+            // el if malhash lazma
             if (blocks[j] == 0)
             {
                 blocks[j] = 1;

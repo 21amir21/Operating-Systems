@@ -6,7 +6,7 @@
 
 void recursivePart(int blocks[])
 {
-    int st, len, k, c, j;
+    int st, len, k, ch, j;
 
     printf("Enter the index of the starting block: ");
     scanf_s("%d", &st);
@@ -35,9 +35,9 @@ void recursivePart(int blocks[])
 
     printf("\nDo you want to enter more files? \n");
     printf("Enter 1 for Yes, Enter 0 for No: ");
-    scanf_s("%d", &c);
+    scanf_s("%d", &ch);
 
-    if (c == 1)
+    if (ch == 1)
         recursivePart(blocks);
     else
         exit(0);
@@ -46,7 +46,8 @@ void recursivePart(int blocks[])
 
 int main()
 {
-    int blocks[50], p, a;
+    int blocks[50], p, a; // p is num of blocks already allocated
+                          // a is the blocks that are allocated
 
     for (int i = 0; i < 50; i++)
         blocks[i] = 0;
