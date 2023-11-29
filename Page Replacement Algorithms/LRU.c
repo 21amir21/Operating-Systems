@@ -18,7 +18,7 @@ void printFrame(int queue[], int occupied)
 {
     for (int i = 0; i < occupied; i++)
     {
-        printf("%dt\t\t\t", queue[i]);
+        printf("%d\t\t\t", queue[i]);
     }
 }
 
