@@ -33,7 +33,7 @@ int main()
 
     int pages = sizeof(incomingStream) / sizeof(incomingStream[0]);
 
-    printf("Incoming \t Frame 1 \t Frame 2 \ Frame 3\n");
+    printf("Incoming \t Frame 1 \t Frame 2 \t Frame 3\n");
 
     for (int i = 0; i < pages; i++)
     {
