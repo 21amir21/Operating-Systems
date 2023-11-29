@@ -5,6 +5,7 @@
 int main()
 {
     int incomingStream[] = {4, 1, 2, 4, 5};
+    int temp[frames]; // frames array
     int pageFaults = 0;
 
     int hit, pages;
@@ -12,8 +13,6 @@ int main()
     pages = sizeof(incomingStream) / sizeof(incomingStream[0]);
 
     printf("Incoming \t Frame 1 \t Frame 2 \t Frame 3");
-
-    int temp[frames];
 
     for (int i = 0; i < frames; i++)
     {
@@ -53,7 +52,7 @@ int main()
             if (temp[i] != -1)
                 printf(" %d\t\t", temp[i]);
             else
-                printf(" - \t\t");
+                printf("- \t\t");
         }
     }
 
